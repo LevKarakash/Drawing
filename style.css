@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.field{
+    border: 3px solid black;
+    border-radius: 5px;
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 3px 10px ;
+}
+
+#hint{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Pojemnik Colory */
+
+.colors{
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    display: flex;
+    transform: translate(-50%, -50%);
+    left: 70%;
+    top: 43%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    box-shadow: 3px 3px 10px ;
+}
+
+h2{
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.red{
+    background-color: red;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: scale 0.3s;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.red:hover{
+    scale: 1.1;
+}
+
+.blue{
+    background-color: blue;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: scale 0.3s;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.blue:hover{
+    scale: 1.1;
+}
+
+
+.green{
+    background-color: green;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: scale 0.3s;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.green:hover{
+    scale: 1.1;
+}
+
+.purple{
+    background-color: purple;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: scale 0.3s;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.purple:hover{
+    scale: 1.1;
+}
+
+.orange{
+    background-color: orange;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: scale 0.3s;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.orange:hover{
+    scale: 1.1;
+}
+
+.black{
+    background-color: black;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: scale 0.3s;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+.black:hover{
+    scale: 1.1;
+}
+
+.brown{
+    background-color: brown;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: scale 0.3s;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+.brown:hover{
+    scale: 1.1;
+}
+
+.cyan{
+    background-color: cyan;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    transition: scale 0.3s;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+.cyan:hover{
+    scale: 1.1;
+}
+/* End Pojemnik Colory */
+
+@media(max-width: 1300px){
+    .field{
+        left: 50%;
+        top: 35%;
+        height: 450px;
+        width: 600px;
+    }
+    .colors{
+        left: 50%;
+        top: 80%;
+        height: 250px;
+        width: 350px;
+    }
+    .color{
+        width: 60px;
+        height: 60px;
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+}
+
+@media(max-width: 800px){
+    h1{
+        font-size: 1rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+    /* .field{
+        left: 50%;
+        top: 35%;
+        height: 450px;
+        width: 600px;
+        margin: auto;
+    }
+    .colors{
+        left: 50%;
+        top: 80%;
+        height: 250px;
+        width: 350px;
+    }
+    .color{
+        width: 60px;
+        height: 60px;
+        margin-left: 20px;
+        margin-top: 25px;
+    } */
+}
