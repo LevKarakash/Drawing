@@ -49,13 +49,12 @@
 
 h2{
     width: 100%;
-    font-size: 2rem;
+    font-size: 24px;
     display: flex;
     justify-content: center;
 }
 
-.red{
-    background-color: red;
+.color{
     border-radius: 50%;
     width: 75px;
     height: 75px;
@@ -65,119 +64,50 @@ h2{
     margin-top: 20px;
 }
 
-.red:hover{
+.color:hover{
     scale: 1.1;
+}
+
+.red{
+    background-color: red;
 }
 
 .blue{
     background-color: blue;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    transition: scale 0.3s;
-    margin-left: 50px;
-    margin-top: 20px;
 }
-
-.blue:hover{
-    scale: 1.1;
-}
-
 
 .green{
     background-color: green;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    transition: scale 0.3s;
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
-.green:hover{
-    scale: 1.1;
 }
 
 .purple{
     background-color: purple;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    transition: scale 0.3s;
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
-.purple:hover{
-    scale: 1.1;
 }
 
 .orange{
     background-color: orange;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    transition: scale 0.3s;
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
-.orange:hover{
-    scale: 1.1;
 }
 
 .black{
     background-color: black;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    transition: scale 0.3s;
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
-
-.black:hover{
-    scale: 1.1;
 }
 
 .brown{
     background-color: brown;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    transition: scale 0.3s;
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
-
-.brown:hover{
-    scale: 1.1;
 }
 
 .cyan{
     background-color: cyan;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    transition: scale 0.3s;
-    margin-left: 50px;
-    margin-top: 20px;
 }
 
-
-.cyan:hover{
-    scale: 1.1;
-}
 /* End Pojemnik Colory */
+
+.dot {
+    position: absolute;
+    width: 5px; 
+    height: 5px;
+    border-radius: 50%;
+}
 
 @media(max-width: 1300px){
     .field{
@@ -201,14 +131,11 @@ h2{
 }
 
 @media(max-width: 800px){
-    h1{
-        font-size: 1rem;
+    h1, h2{
+        text-align: center;
+        font-size: 18px;
     }
-
-    h2{
-        font-size: 1rem;
-    }
-    /* .field{
+    .field{
         left: 50%;
         top: 35%;
         height: 450px;
@@ -226,5 +153,20 @@ h2{
         height: 60px;
         margin-left: 20px;
         margin-top: 25px;
-    } */
+    }
+}
+@media (max-width: 480px) {
+    .field {
+        width: 90vw;
+        height: 40vh;
+    }
+    .colors {
+        width: 80vw;
+        height: 80px;
+    }
+    .color {
+        width: 8vw;
+        height: 8vw;
+        margin: 1vw;
+    }
 }
